@@ -85,10 +85,15 @@ run_test "$USER_CMD" "-500" "-500" "negative five hundred"
 run_test "$USER_CMD" "-678" "-678" "negative six hundred seventy-eight"
 run_test "$USER_CMD" "-712" "-712" "negative seven hundred twelve"
 
-# large numbers
+# larger numbers
+run_test "$USER_CMD" "4444" "4444" "four thousand four hundred fourty-four"
+run_test "$USER_CMD" "4678" "4678" "four thousand six hundred seventy-eight"
+run_test "$USER_CMD" "10001" "10001" "ten thousand one"
 run_test "$USER_CMD" "1000018" "1000018" "one million eighteen"
 run_test "$USER_CMD" "4289794" "4289794" "four million two hundred eighty-nine thousand seven hundred ninety-four"
-run_test "$USER_CMD" "658944" "658944" "six hundred fifty-eight thousand nine hundred fourty-four"
 run_test "$USER_CMD" "8976433287" "8976433287" "eight billion nine hundred seventy-six million four hundred thirty-three thousand two hundred eighty-seven"
-run_test "$USER_CMD" "100000000011" "100000000011" "one hundred billion eleven"
 run_test "$USER_CMD" "66666666666" "66666666666" "sixty-six billion six hundred sixty-six million six hundred sixty-six thousand six hundred sixty-six"
+run_test "$USER_CMD" "100000000011" "100000000011" "one hundred billion eleven"
+run_test "$USER_CMD" "543200000054" "543200000054" "five hundred fourty-three billion two hundred million fifty-four"
+run_test "$USER_CMD" "5432000000054" "5432000000054" "five trillion four hundred thirty-two billion fifty-four"
+run_test "$USER_CMD" "100000000000000000000" "100000000000000000000" "one hundred quintillion"

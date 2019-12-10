@@ -8,8 +8,6 @@ if (process.argv.length <= 2) {
         const rs = new ReadableString(number)
         console.log(rs.toString())
     } catch (e) {
-        debugger
-        console.log(e)
         console.log('FAIL: Malformed input')
     }
 }

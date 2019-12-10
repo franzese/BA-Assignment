@@ -6,7 +6,7 @@
     "scripts": {
         "start": "node index.js",
         "test": "./harness.sh 'node index.js'",
-        "debug": "node --inspect-brk index.js 100"
+        "debug": "node --inspect-brk index.js"
     },
     "author": "@franzese",
     "license": "ISC",
