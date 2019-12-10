@@ -2,37 +2,37 @@
  *  FUNCTION isNegative(n)
  *  Takes input integer n and returns NEGATIVE keyword string if the integer is below 0
  */
-const isNegative = (n) => {
+const isNegative = n => {
     if (n < 0) {
-        return NEGATIVE;
+        return NEGATIVE
     } else {
-        return '';
+        return ''
     }
 }
+
+/***
+ * FUNCTION numberToReadableString(n)
+ * Takes input integer n and breaks it up into groups of human readable strings
+ */
+const numberToReadableString = n => {
+    return n.toString()
+}
+
 /***
  *  Special strings
  */
-const NEGATIVE = 'negative';
-const COMMA = ',';
-const SPACE = ' ';
-const AND = 'and';
-const HYPHEN = '-';
+const NEGATIVE = 'negative'
+const COMMA = ','
+const SPACE = ' '
+const AND = 'and'
+const HYPHEN = '-'
+const GROUPSIZE = 3
+const GROUPTOTAL = 100
 
-if (process.argv.length <= 2 ) {
-    console.log('You didn\'t give me a number!');
+if (process.argv.length <= 2) {
+    console.log("You didn't give me a number!")
 } else {
-    const number = parseInt(process.argv[2]);
-    const output = `${isNegative(number)} ${number}`;
-    console.log(output);
-    debugger;
+    const number = parseInt(process.argv[2])
+    const output = `[${number}]-> ${isNegative(number)} ${numberToReadableString(number)}`
+    console.log(output)
 }
-
-
-// having serious debates about this
-// asked all my friends 
-// the number "1271" comes out in multiple ways:
-// > "one thousand seventy one"
-// > "one thousand'n seventy one"
-// > "one thousand and seventy one"
-// > "twelve seventy one"
-
