@@ -1,0 +1,12 @@
+{
+  "name": "int-to-human-string",
+  "version": "1.0.0",
+  "description": "Converts an int like 195 to \"one hundred and ninety-five\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "./harness.sh 'node index.js'"
+  },
+  "author": "@franzese",
+  "license": "ISC"
+}
