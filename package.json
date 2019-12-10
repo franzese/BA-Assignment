@@ -8,5 +8,14 @@
     "start": "./harness.sh 'node index.js'"
   },
   "author": "@franzese",
-  "license": "ISC"
+  "license": "ISC",
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
 }
